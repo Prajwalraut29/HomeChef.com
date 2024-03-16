@@ -5,8 +5,7 @@ const cookieParser = require("cookie-parser");
 const { connection } = require("../server/db/connection");
 const router = require('../server/routes/routes')
 require("dotenv").config();
-
-const Host = process.env.port || 5000;
+const BASE_URL = process.env.BASE_URL
 
 connection();
 
@@ -16,6 +15,6 @@ app.use(cookieParser());
 
 app.use("/api", router);
 
-app.listen(Host, () => console.log(`Server running on port ${process.env.port}`));
+app.listen(BASE_URL, () => console.log(`Server running on port ${process.env.port}`));
 
 
