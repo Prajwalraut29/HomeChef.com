@@ -5,12 +5,12 @@ const cookieParser = require("cookie-parser");
 const { connection } = require("../server/db/connection");
 const router = require('../server/routes/routes')
 require("dotenv").config();
-const PORT = process.env.BASE_URL || 5000
+const PORT = process.env.PORT || 5000
 
 connection();
 
 app.use(express.json());
-app.use(cors({ origin: "https://recipe-mernapp.vercel.app", credentials: true }));
+app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 app.use(cookieParser());
 
 app.use("/api", router);
