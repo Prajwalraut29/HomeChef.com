@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 5000;
+const port = 'https://recipe-mernweb-app.onrender.com'
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const { connection } = require("../server/db/connection");
@@ -10,7 +10,7 @@ require("dotenv").config();
 connection();
 
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(cors({ origin: "https://recipe-mernapp.vercel.app", credentials: true }));
 app.use(cookieParser());
 
 app.use("/api", router);
