@@ -17,12 +17,12 @@ function App() {
           <Navbar />
           <Toaster />
           <Routes>
-            <Route path='https://recipe-mernapp-ided.onrender.com/' element={<Home />} />
-            <Route path="https://recipe-mernapp-ided.onrender.com/about" element={<About />} />
-            <Route path="https://recipe-mernapp-ided.onrender.com/login" element={<Login />} />
-            <Route path="https://recipe-mernapp-ided.onrender.com/signup" element={<Signup />} />
-            <Route path="https://recipe-mernapp-ided.onrender.com/recipe/:id" element={<RecipeDetails />} />
-            <Route path='https://recipe-mernapp-ided.onrender.com/favourites' element={<Favourites />} />
+            <Route path='/' element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/recipe/:id" element={<RecipeDetails />} />
+            <Route path='/favourites' element={<Favourites />} />
           </Routes>
         </BrowserRouter>
       </Provider>

@@ -10,7 +10,7 @@ const Navbar = () => {
 
 
     const HandleLogout = async () => {
-        const res = await axios.get("https://recipe-mernapp-ided.onrender.com/api/logout", {
+        const res = await axios.get("http://localhost:5000/api/logout", {
             withCredentials: true,
         });
         const data = await res.data;
@@ -22,7 +22,7 @@ const Navbar = () => {
 
 
     const checkUser = async () => {
-        const res = await axios.get("https://recipe-mernapp-ided.onrender.com/api/checkUser", {
+        const res = await axios.get("http://localhost:5000/api/checkUser", {
             withCredentials: true,
         });
         const data = await res.data;
