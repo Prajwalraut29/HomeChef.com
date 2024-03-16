@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const port = 'https://recipe-mernweb-app.onrender.com'
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const { connection } = require("../server/db/connection");
@@ -15,6 +14,5 @@ app.use(cookieParser());
 
 app.use("/api", router);
 
-app.listen(port, () => console.log(`Server running on port ${port}`));
-
+app.listen(process.env.port, () => console.log(`Server running on port ${process.env.port}`));
 
