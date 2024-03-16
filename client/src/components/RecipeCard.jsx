@@ -15,7 +15,7 @@ const RecipeCard = ({ id, title, image }) => {
 
     const addToFav = async (favourite) => {
         const res = await axios.post(
-            `http://localhost:5000/api/addToFavourites/${user._id}`,
+            `https://recipe-mernapp-ided.onrender.com/api/addToFavourites/${user._id}`,
             favourite,
             { withCredentials: true }
         );

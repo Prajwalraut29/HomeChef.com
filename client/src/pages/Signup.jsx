@@ -11,7 +11,7 @@ const Signup = () => {
 
     const handleSignup = async (e) => {
         e.preventDefault();
-        const res = await axios.post('http://localhost:5000/api/signup', {
+        const res = await axios.post('https://recipe-mernapp-ided.onrender.com/api/signup', {
             username, email, password
         }, { withCredentials: true })
         const data = await res.data;
