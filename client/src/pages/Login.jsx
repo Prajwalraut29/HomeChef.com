@@ -78,7 +78,7 @@ const Login = () => {
                             className="px-4 py-2 rounded text-white inline-block shadow-lg bg-red-500 hover:bg-red-600 focus:bg-red-700"
                             type="submit"
                         >
-                            Sign up
+                            login
                         </button>
                     </div>
                     <div className="text-xs flex gap-2 mt-2">
