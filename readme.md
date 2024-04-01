@@ -1,4 +1,4 @@
-# Title: Recipe Management Application
+# Title: HomeChef Web Application
 
 - Description: Developed a Recipe Management Application using modern web technologies for seamless user experience and efficient recipe management. Leveraged React Redux for frontend, Node.js Express for backend, and MongoDB for database management. Implemented secure authentication using JSON Web Tokens (JWT) and encrypted password storage with bcrypt.
 
